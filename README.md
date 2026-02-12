@@ -40,5 +40,6 @@ You will need to open **two separate terminal windows**.
 
 | Component | Directory | Command | URL |
 | :--- | :--- | :--- | :--- |
-| **Backend** | `\backend` | `.\mvnw.cmd spring-boot:run` | `http://localhost:8080` |
-| **Frontend** | `\frontend` | `npm start` | `http://localhost:3000` |
+| **Backend (Spring Boot)** | `backend` | `mvn spring-boot:run` | `http://localhost:8080` |
+| **Payment Service (ASP.NET Core)** | `payment-dotnet` | `dotnet run` | `http://localhost:5000` |
+| **Frontend (React)** | `frontend` | `npm start` | `http://localhost:3000` |
