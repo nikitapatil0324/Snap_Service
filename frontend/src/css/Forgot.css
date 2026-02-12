@@ -1,0 +1,121 @@
+/* Wrapper */
+.forgot-wrapper {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, #e8f8f6, transparent 60%),
+    radial-gradient(circle at bottom right, #dff3f1, transparent 60%),
+    #f5fefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.forgot-card {
+  width: 360px;
+  padding: 40px 32px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  animation: fadeSlide 0.8s ease;
+}
+
+/* Branding */
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #00796b;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 28px;
+  line-height: 1.4;
+}
+
+/* Input */
+.input-group {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  font-size: 15px;
+}
+
+.input-group label {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 6px;
+  color: #9ca3af;
+  transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  font-size: 12px;
+  color: #00796b;
+}
+
+/* Button */
+.reset-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #00b09b;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reset-btn:hover {
+  background: #009688;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 176, 155, 0.35);
+}
+
+/* Links */
+.links {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.links a {
+  color: #00796b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
